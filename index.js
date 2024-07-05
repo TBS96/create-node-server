@@ -29,15 +29,15 @@ const server = http.createServer((req,res) => {
     }
 
     else if(req.url === '/about') {
-        handleReadFile('./pages/about.html', 200, req, res);
+        handleReadFile('./about.html', 200, req, res);
     }
 
     else if(req.url === '/contact') {
-        handleReadFile('./pages/contact.html', 200, req, res);
+        handleReadFile('./contact.html', 200, req, res);
     }
 
     else {
-        handleReadFile('./pages/404.html', 404, req,res);
+        handleReadFile('./404.html', 404, req,res);
     }
 });
 
